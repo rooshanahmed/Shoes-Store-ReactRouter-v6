@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useNavigate } from "react-router-dom";
+import log from './log.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    // marginBottom: '20px',
   },
 }));
 
@@ -28,7 +30,7 @@ export default function Header() {
   return (
     <div className={classes.root}>
       <AppBar
-        position="static"
+        position="fixed"
         style={{
           background: "#1e272e",
           color: "d2dae2",
@@ -36,6 +38,7 @@ export default function Header() {
         }}
       >
         <Toolbar>
+          <img src={log} alt="logo" width='80px' height='80px' />
           <Typography variant="h4" className={classes.title}>
             Rooshan's Shoe Store
           </Typography>
