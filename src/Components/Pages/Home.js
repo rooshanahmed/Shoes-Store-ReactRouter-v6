@@ -15,6 +15,10 @@ const useStyles = makeStyles({
         textAlign: 'center',
 
     },
+    media: {
+        width: '250px',
+        height: '250px',
+    }
 });
 
 const Home = () => {

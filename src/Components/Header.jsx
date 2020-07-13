@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useNavigate } from "react-router-dom";
-import log from './log.png';
+import log from "./log.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,13 +38,13 @@ export default function Header() {
         }}
       >
         <Toolbar>
-          <img src={log} alt="logo" width='80px' height='80px' />
+          <img src={log} alt="logo" width="80px" height="80px" />
           <Typography variant="h4" className={classes.title}>
             Rooshan's Shoe Store
           </Typography>
           <Button
             variant="contained"
-            style={{ margin: "10px" }}
+            style={{ margin: "12px" }}
             onClick={() => {
               navigate("/");
             }}
