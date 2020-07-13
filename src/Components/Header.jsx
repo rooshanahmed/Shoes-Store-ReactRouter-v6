@@ -13,12 +13,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
   title: {
     flexGrow: 1,
-    // marginBottom: '20px',
+    fontFamily: "FreeMono, monospace",
   },
 }));
 
@@ -34,7 +31,6 @@ export default function Header() {
         style={{
           background: "#1e272e",
           color: "d2dae2",
-          fontFamily: "Georgia",
         }}
       >
         <Toolbar>
